@@ -2,8 +2,8 @@ import React from "react";
 
 const ProductCard = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f2ebe3] items-center justify-center md:h-screen">
-      <div className=" p-5 md:flex ">
+    <div className="flex flex-col min-h-screen bg-[#f2ebe3] items-center justify-center ">
+      <div className="p-5 md:flex ">
         <img
           className="hidden md:block md:rounded-l-md bg-blue-900 md:w-60"
           src="image-product-desktop.jpg"
@@ -15,17 +15,30 @@ const ProductCard = () => {
           alt=""
         />
 
-        <div className="bg-white p-4 sm: sm:rounded-b-md  md:rounded-r-md ">
+        <div className="bg-white p-4 rounded-b-md  md:rounded-r-md ">
           <div className="text-[#6c7289] flex flex-col md: h-full md:justify-around ">
             <div className="uppercase">
               P&#32;e&#32;r&#32;f&#32;u&#32;m&#32;e
             </div>
-            <div className="font-bold text-4xl flex flex-col font-fraunces text-black">
-              Gabrielle Essence <span>Eau De Parfum</span>
+            <div className="block md:hidden">
+              <div className="font-bold text-4xl flex flex-col font-fraunces text-black">
+                Gabrielle Essence <span>Eau De Parfum</span>
+              </div>
+              <div className="mt-3 text-xl font-Montserrat ">
+                A floral, solar and voluptuous interpretation composed by
+                Olivier Polge, Perfumer-Creator for the House of CHANEL.
+              </div>
             </div>
-            <div className="mt-3 text-xl font-Montserrat ">
-              A floral, solar and voluptuous interpretation composed by Olivier
-              Polge, Perfumer-Creator for the House of CHANEL.
+            <div className="hidden md:block ">
+              <div className="font-bold text-4xl flex flex-col font-fraunces text-black">
+                Gabrielle <span>Essence Eau</span> De Parfum
+              </div>
+              <div className="mt-3 text-xl font-Montserrat flex flex-col  ">
+                A floral, solar and voluptuous
+                <span>interpretation composed by </span>
+                <span>Olivier Polge, Perfumer-Creator </span>
+                for the House of CHANEL.
+              </div>
             </div>
 
             {/* price */}
