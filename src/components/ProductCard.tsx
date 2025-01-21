@@ -36,7 +36,7 @@ const ProductCard = () => {
               <span className="text-gray-400 ml-3 line-through ">$169.99</span>
             </div>
             {/* cart button */}
-            <button className="bg-[#3a8266] text-white p-3 rounded-md text-center font-semibold flex items-center justify-center mt-5 hover:cursor-pointer">
+            <button className="bg-[#3a8266] hover:bg-[#1b4133] text-white p-3 rounded-md text-center font-semibold flex items-center justify-center mt-5 hover:cursor-pointer">
               <svg
                 className="mr-2"
                 width="15"
@@ -48,7 +48,7 @@ const ProductCard = () => {
                   fill="#FFF"
                 />
               </svg>
-              add to cart
+              Add to Cart
             </button>
           </div>
         </div>
