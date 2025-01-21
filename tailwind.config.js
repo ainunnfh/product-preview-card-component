@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // sans: ["Inter", "system-ui", "Arial", "sans-serif"],
-        // mono: ["JetBrains Mono", "monospace"],
         Montserrat: ["Montserrat", "system-ui", "Arial", "sans-serif"],
-        Fraunces: ["Fraunces", "system-ui", "Arial", "sans-serif"],
+        fraunces: ["fraunces", "system-ui", "Arial", "sans-serif"],
+        serif: ["Serif", "system-ui", "Arial", "fraunces"],
+      },
+      letterSpacing: {
+        widest: ".3em",
       },
     },
   },
