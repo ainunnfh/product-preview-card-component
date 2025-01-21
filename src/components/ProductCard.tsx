@@ -20,7 +20,7 @@ const ProductCard = () => {
             <div className="uppercase">
               P&#32;e&#32;r&#32;f&#32;u&#32;m&#32;e
             </div>
-            <div className="font-bold text-4xl flex flex-col font-Fraunces text-black">
+            <div className="font-bold text-4xl flex flex-col font-fraunces text-black">
               Gabrielle Essence <span>Eau De Parfum</span>
             </div>
             <div className="mt-3 text-xl font-Montserrat ">
@@ -29,11 +29,11 @@ const ProductCard = () => {
             </div>
 
             {/* price */}
-            <div className="mt-5">
-              <span className="text-[#3a8266] font-bold  text-2xl">
+            <div className="mt-5 ">
+              <span className="text-[#3a8266] font-bold  text-2xl font-fraunces">
                 $149.99
               </span>
-              <span className="text-gray-400 ml-3 line-through">$169.99</span>
+              <span className="text-gray-400 ml-3 line-through ">$169.99</span>
             </div>
             {/* cart button */}
             <div className="bg-[#3a8266] text-white p-3 rounded-md text-center font-semibold flex items-center justify-center mt-5">
