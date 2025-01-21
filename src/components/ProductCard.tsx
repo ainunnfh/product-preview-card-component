@@ -5,17 +5,17 @@ const ProductCard = () => {
     <div className="flex flex-col min-h-screen bg-[#f2ebe3] items-center justify-center md:h-screen">
       <div className=" p-5 md:flex ">
         <img
-          className="hidden md:block rounded-md bg-blue-900 md:w-60"
+          className="hidden md:block md:rounded-l-md bg-blue-900 md:w-60"
           src="image-product-desktop.jpg"
           alt=""
         />
         <img
-          className="block md:hidden rounded-md bg-blue-900"
+          className="block md:hidden rounded-t-md bg-blue-900"
           src="image-product-mobile.jpg"
           alt=""
         />
 
-        <div className="bg-white p-4 rounded-md">
+        <div className="bg-white p-4 sm: sm:rounded-b-md  md:rounded-r-md ">
           <div className="text-[#6c7289] flex flex-col md: h-full md:justify-around ">
             <div className="uppercase">
               P&#32;e&#32;r&#32;f&#32;u&#32;m&#32;e
@@ -36,7 +36,7 @@ const ProductCard = () => {
               <span className="text-gray-400 ml-3 line-through ">$169.99</span>
             </div>
             {/* cart button */}
-            <div className="bg-[#3a8266] text-white p-3 rounded-md text-center font-semibold flex items-center justify-center mt-5">
+            <button className="bg-[#3a8266] text-white p-3 rounded-md text-center font-semibold flex items-center justify-center mt-5 hover:cursor-pointer">
               <svg
                 className="mr-2"
                 width="15"
@@ -49,7 +49,7 @@ const ProductCard = () => {
                 />
               </svg>
               add to cart
-            </div>
+            </button>
           </div>
         </div>
       </div>
